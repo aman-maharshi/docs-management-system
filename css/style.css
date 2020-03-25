@@ -56,7 +56,7 @@ footer {
 	text-align: center;
 }
 /*
-	LOGIN FORM
+	LOGIN PAGE
 -------------------*/
 .login {
 	padding-top: 120px;
@@ -90,10 +90,27 @@ footer {
 	margin-top: 10px;
 	font-size: 16px;
 }
+.login-warning-cp {
+	color: red;
+	margin-left: 10px;
+	position: relative;
+	top: 3px;
+	font-size: 16px;
+}
 .star {
 	color: red;
 	padding-left: 3px;
 }
+#browser-check {
+	color: red;
+	position: absolute;
+	left: 30%;
+	top: 25%;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 /*
 	OPTIONS PAGE
 ---------------------*/
