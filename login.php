@@ -16,7 +16,6 @@
 				$_SESSION['section'] = $tuple['section'];
 				$_SESSION['level'] = $tuple['level'];
 				header("location: options.php");
-				
 			}
 			else {
 				$message = "* Invalid Fields";
@@ -49,6 +48,7 @@
 							<label for="password">Password<span class="star">*</span></label>
 							<input type="password" class="form-control" id="password" name="password">
 						  </div>
+						  <p class="text-right" style="margin: 0 42px 0 0;"><a href="change-password.php">Change Password</a></p>
 						  <div class="form-group">
 							<label></label>
 							<button type="submit" class="btn btn-primary" name="submit">Login</button>
@@ -59,6 +59,17 @@
 				</div>
 			</div>
 		</section>
+		<p id="browser-check">Please use a modern web browser like Chrome or Firefox</p>
 		<?php include("footer-absolute.php")?>
+		
+		<script>
+			// checking the web browser being used
+			var browserCheck = document.getElementById('browser-check');
+			var browserInfo = navigator.userAgent;
+			
+			if ((browserInfo.indexOf("Chrome") != -1) || (browserInfo.indexOf("Firefox") != -1)) {
+				browserCheck.textContent = "";
+			}
+		</script>
 	</body>
 </html>
